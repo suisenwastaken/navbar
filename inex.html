@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar" id="navbar">
+        <a href="" class="link">Домой</a>
+        <a href="" class="link">Каталог</a>
+        <a href="" class="link">О нас</a>
+
+        <div class="dropdownmenu" onclick="ShowNavbar()">
+            <img src="icon.png" alt="icon">
+        </div>
+    </div>
+  </body>
+
+  <script>
+    function ShowNavbar() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+</html>
